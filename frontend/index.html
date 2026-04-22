@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="left">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 20 20"><path d="M10 2L2 8v10h5v-6h6v6h5V8z"/></svg>
+                </div>
+                <span class="logo-text">House Price Prediction</span>
+            </div>
+            <h1>Estimar valor do imóvel</h1>
+            <p class="subtitle">Preencha as características para obter a previsão</p>
+
+            <form id="houseForm">
+                <div class="grid2">
+                    <div class="field">
+                        <label for="area">Área (m²)</label>
+                        <input type="number" id="area" name="area" placeholder="Ex: 120" min="20" max="1000" required />
+                    </div>
+                    <div class="field">
+                        <label for="idade">Idade (anos)</label>
+                        <input type="number" id="idade" name="idade" placeholder="Ex: 10" min="0" max="150" required />
+                    </div>
+                    <div class="field">
+                        <label for="quartos">Quartos</label>
+                        <input type="number" id="quartos" name="quartos" placeholder="Ex: 3" min="1" max="20" required />
+                    </div>
+                    <div class="field">
+                        <label for="banheiros">Banheiros</label>
+                        <input type="number" id="banheiros" name="banheiros" placeholder="Ex: 2" min="1" max="20" required />
+                    </div>
+                    <div class="field">
+                        <label for="vagas">Vagas</label>
+                        <input type="number" id="vagas" name="vagas" placeholder="Ex: 1" min="0" max="20" required />
+                    </div>
+                    <div class="field">
+                        <label for="bairro">Bairro</label>
+                        <select id="bairro" name="bairro" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="Centro">Centro</option>
+                            <option value="Jardins">Jardins</option>
+                            <option value="Lapa">Lapa</option>
+                            <option value="Moema">Moema</option>
+                            <option value="Vila Madalena">Vila Madalena</option>
+                        </select>
+                    </div>
+                    <div class="field full">
+                        <label>Piscina</label>
+                        <div class="check-row" id="piscinaRow" onclick="togglePiscina()">
+                            <div class="check-box" id="checkBox">
+                                <svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>
+                            </div>
+                            <span class="check-label">O imóvel possui piscina</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn">Calcular Preço Estimado</button>
+            </form>
+        </div>
+
+        <div class="right">
+            <div class="right-bg"></div>
+            <span class="tag">Resultado</span>
+            <div class="result-label">Preço estimado</div>
+            <div id="result" class="result-value">R$ —</div>
+            <div id="result-hint" class="result-hint">Preencha o formulário ao lado</div>
+            <div class="divider"></div>
+            <div class="stats">
+                <div class="stat-row"><span class="stat-key">Área</span><span class="stat-val empty" id="sArea">—</span></div>
+                <div class="stat-row"><span class="stat-key">Quartos</span><span class="stat-val empty" id="sQuartos">—</span></div>
+                <div class="stat-row"><span class="stat-key">Banheiros</span><span class="stat-val empty" id="sBanheiros">—</span></div>
+                <div class="stat-row"><span class="stat-key">Vagas</span><span class="stat-val empty" id="sVagas">—</span></div>
+                <div class="stat-row"><span class="stat-key">Bairro</span><span class="stat-val empty" id="sBairro">—</span></div>
+                <div class="stat-row"><span class="stat-key">Idade</span><span class="stat-val empty" id="sIdade">—</span></div>
+                <div class="stat-row"><span class="stat-key">Piscina</span><span class="stat-val empty" id="sPiscina">—</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
