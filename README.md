@@ -12,6 +12,21 @@ Este projeto visa desenvolver um modelo de Machine Learning capaz de prever o va
 
 ---
 
+## 📊 Dataset
+
+| Coluna | Descrição |
+|---|---|
+| `area_m2` | Área do imóvel em m² |
+| `quartos` | Número de quartos |
+| `banheiros` | Número de banheiros |
+| `vagas` | Vagas de garagem |
+| `bairro` | Bairro do imóvel |
+| `idade_anos` | Idade do imóvel em anos |
+| `piscina` | Presença de piscina (0 ou 1) |
+| `preco` | Preço do imóvel em R$ (target) |
+
+---
+
 ## 🔍 Análise Exploratória (EDA)
 As seguintes análises foram realizadas:
 
@@ -53,7 +68,8 @@ Gradient Boosting:
 1. **Clone o repositório:**
 
    ```bash
-   https://github.com/RodrygoYamasaki/HousePricePrediction.git
+   git clone https://github.com/RodrygoYamasaki/HousePricePrediction.git
+   cd HousePricePrediction
    ```
 
 2. **Instale as dependências:**
@@ -62,8 +78,21 @@ Gradient Boosting:
    pip install -r requirements.txt
    ```
 
-3. **Acesse o notebook:**
+3. **Treine o modelo:**
 
    ```bash
-   notebooks/treinando_modelo.ipynb
+   jupyter notebook notebooks/treinando_modelo.ipynb
    ```
+
+4. **Inicie o servidor backend:**
+
+   ```bash
+   cd backend
+   run.bat
+   ```
+
+5. **Abra o arquivo index.html com a extensão Live Server no VSCode.**
+
+6. **Preencher o formulário.**
+
+7. **O arquivo Javascript gerencia a interação com a API, enviando os dados do formulário e exibindo o resultado.**
