@@ -8,6 +8,9 @@ Este projeto visa desenvolver um modelo de Machine Learning capaz de prever o va
 - **Pandas:** Para manipulação e análise de dados.
 - **Matplotlib:** Para criação de visualizações estatísticas.
 - **Seaborn:** Para gráficos e visualizações personalizadas.
+- **Joblib:** Para salvar e carregar modelos de machine learning treinados.
+- **Flask:** Framework web para criar APIs em Python.
+- **Flask-CORS:** Permite comunicação entre backend e frontend.
 - **Scikit-Learn:** Biblioteca para criação e treino de modelos de machine learning.
 
 ---
@@ -45,10 +48,10 @@ Foram treinados e comparados 4 modelos de regressão:
 
 | Modelo | R² Treino | R² Teste |
 |---|---|---|
-| Linear Regression | 0.8591 | 0.8692 |
-| Ridge Regression | 0.8576 | 0.8663 |
-| Random Forest | 0.9721 | 0.8246 |
-| Gradient Boosting | 0.9928 | 0.9246 |
+| Linear Regression | 0.8634 | 0.8526 |
+| Ridge Regression | 0.8629 | 0.8512 |
+| Random Forest | 0.9763 | 0.8088 |
+| Gradient Boosting | 0.9902 | 0.9387 |
 
 ---
 
@@ -57,9 +60,9 @@ Gradient Boosting:
 
 | Métrica | Valor |
 |---|---|
-| R² | 0.9246 |
-| MAE | R$ 86.536 |
-| RMSE | R$ 106.201 |
+| R² | 0.9387 |
+| MAE | R$ 69.240 |
+| RMSE | R$ 88.363 |
 
 ---
 
