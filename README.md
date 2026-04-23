@@ -1,5 +1,5 @@
 # 🏠 House Price Prediction
-Este projeto visa desenvolver um modelo de Machine Learning capaz de prever o valor de mercado de propriedades residencias com base em caracteristicas estruturais e geograficas. O objetivo principal é fornecer uma ferramenta de estimatica precisa para auxiliar compradores e corretores na tomada de decisão, reduzindo a assimetria de informação no mercado.
+Este projeto visa desenvolver um modelo de Machine Learning capaz de prever o valor de mercado de propriedades residenciais com base em características estruturais e geograficas. O objetivo principal é fornecer uma ferramenta de estimativa precisa para auxiliar compradores e corretores na tomada de decisão, reduzindo a assimetria de informação no mercado.
 
 ## 🛠️ Tecnologias e Bibliotecas
 
@@ -12,6 +12,29 @@ Este projeto visa desenvolver um modelo de Machine Learning capaz de prever o va
 - **Flask:** Framework web para criar APIs em Python.
 - **Flask-CORS:** Permite comunicação entre backend e frontend.
 - **Scikit-Learn:** Biblioteca para criação e treino de modelos de machine learning.
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+HousePricePrediction/
+├── backend/
+│   ├── server.py
+│   └── run.bat
+├── data/
+│   └── data.csv
+├── frontend/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── script.js
+│   └── index.html
+├── notebooks/
+│   └── treinando_modelo.ipynb
+├── requirements.txt
+└── README.md
+```
 
 ---
 
